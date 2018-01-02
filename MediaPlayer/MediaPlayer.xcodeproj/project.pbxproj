@@ -15,7 +15,6 @@
 		E29A1E171FFB326F00B45EF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A1E161FFB326F00B45EF1 /* main.m */; };
 		E29A1E2B1FFB343100B45EF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A1E291FFB343100B45EF1 /* AppDelegate.m */; };
 		E29A1E2E1FFB3C2400B45EF1 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A1E2D1FFB3C2400B45EF1 /* BaseViewController.m */; };
-		E29A1E891FFB3E8E00B45EF1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A1E881FFB3E8E00B45EF1 /* HomeViewController.swift */; };
 		E29A1E8C1FFB406800B45EF1 /* UtilitiesColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A1E8A1FFB406700B45EF1 /* UtilitiesColor.m */; };
 		E29A1E991FFB40C900B45EF1 /* ShareColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A1E8E1FFB40C800B45EF1 /* ShareColor.swift */; };
 		E29A1E9A1FFB40C900B45EF1 /* ShareFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A1E901FFB40C800B45EF1 /* ShareFont.swift */; };
@@ -140,6 +139,14 @@
 		E29A20E11FFB640F00B45EF1 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A20951FFB640F00B45EF1 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		E29A20E21FFB640F00B45EF1 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A20971FFB640F00B45EF1 /* View+MASAdditions.m */; };
 		E29A20E31FFB640F00B45EF1 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A209A1FFB640F00B45EF1 /* ViewController+MASAdditions.m */; };
+		E29A20E51FFB782800B45EF1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A20E41FFB782800B45EF1 /* HomeViewController.swift */; };
+		E29A20E91FFB898000B45EF1 /* BaseTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A20E81FFB898000B45EF1 /* BaseTabbarController.m */; };
+		E29A20EC1FFB89FE00B45EF1 /* BaseApi.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A20EB1FFB89FE00B45EF1 /* BaseApi.m */; };
+		E29A20EF1FFB8A1400B45EF1 /* BaseBussiness.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A20EE1FFB8A1400B45EF1 /* BaseBussiness.m */; };
+		E29A20F21FFB8A2400B45EF1 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A20F11FFB8A2400B45EF1 /* BaseModel.m */; };
+		E29A20F51FFB8A4600B45EF1 /* BaseStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A20F41FFB8A4600B45EF1 /* BaseStorage.m */; };
+		E29A20F81FFB8A5500B45EF1 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A20F71FFB8A5500B45EF1 /* BaseView.m */; };
+		E29A20FB1FFB8A6300B45EF1 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A20FA1FFB8A6300B45EF1 /* BaseViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -160,7 +167,6 @@
 		E29A1E2F1FFB3C5200B45EF1 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		E29A1E311FFB3CCA00B45EF1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E29A1E331FFB3D5F00B45EF1 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		E29A1E881FFB3E8E00B45EF1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E29A1E8A1FFB406700B45EF1 /* UtilitiesColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilitiesColor.m; sourceTree = "<group>"; };
 		E29A1E8B1FFB406800B45EF1 /* UtilitiesColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilitiesColor.h; sourceTree = "<group>"; };
 		E29A1E8D1FFB40C800B45EF1 /* CommonColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonColor.h; sourceTree = "<group>"; };
@@ -426,6 +432,21 @@
 		E29A20981FFB640F00B45EF1 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		E29A20991FFB640F00B45EF1 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		E29A209A1FFB640F00B45EF1 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		E29A20E41FFB782800B45EF1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E29A20E71FFB898000B45EF1 /* BaseTabbarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabbarController.h; sourceTree = "<group>"; };
+		E29A20E81FFB898000B45EF1 /* BaseTabbarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabbarController.m; sourceTree = "<group>"; };
+		E29A20EA1FFB89FE00B45EF1 /* BaseApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseApi.h; sourceTree = "<group>"; };
+		E29A20EB1FFB89FE00B45EF1 /* BaseApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseApi.m; sourceTree = "<group>"; };
+		E29A20ED1FFB8A1400B45EF1 /* BaseBussiness.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseBussiness.h; sourceTree = "<group>"; };
+		E29A20EE1FFB8A1400B45EF1 /* BaseBussiness.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseBussiness.m; sourceTree = "<group>"; };
+		E29A20F01FFB8A2400B45EF1 /* BaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		E29A20F11FFB8A2400B45EF1 /* BaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		E29A20F31FFB8A4600B45EF1 /* BaseStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseStorage.h; sourceTree = "<group>"; };
+		E29A20F41FFB8A4600B45EF1 /* BaseStorage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseStorage.m; sourceTree = "<group>"; };
+		E29A20F61FFB8A5500B45EF1 /* BaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		E29A20F71FFB8A5500B45EF1 /* BaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
+		E29A20F91FFB8A6300B45EF1 /* BaseViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
+		E29A20FA1FFB8A6300B45EF1 /* BaseViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -506,6 +527,8 @@
 		E29A1E1D1FFB343000B45EF1 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				E29A20F31FFB8A4600B45EF1 /* BaseStorage.h */,
+				E29A20F41FFB8A4600B45EF1 /* BaseStorage.m */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -513,9 +536,10 @@
 		E29A1E1E1FFB343000B45EF1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E29A20E61FFB88F100B45EF1 /* BaseTabbarController */,
 				E29A1E2C1FFB3C2400B45EF1 /* BaseViewController.h */,
 				E29A1E2D1FFB3C2400B45EF1 /* BaseViewController.m */,
-				E29A1E881FFB3E8E00B45EF1 /* HomeViewController.swift */,
+				E29A20E41FFB782800B45EF1 /* HomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -552,6 +576,8 @@
 		E29A1E211FFB343000B45EF1 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E29A20F91FFB8A6300B45EF1 /* BaseViewModel.h */,
+				E29A20FA1FFB8A6300B45EF1 /* BaseViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -559,6 +585,8 @@
 		E29A1E221FFB343000B45EF1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E29A20F61FFB8A5500B45EF1 /* BaseView.h */,
+				E29A20F71FFB8A5500B45EF1 /* BaseView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -566,6 +594,8 @@
 		E29A1E231FFB343000B45EF1 /* Bussiness */ = {
 			isa = PBXGroup;
 			children = (
+				E29A20ED1FFB8A1400B45EF1 /* BaseBussiness.h */,
+				E29A20EE1FFB8A1400B45EF1 /* BaseBussiness.m */,
 			);
 			path = Bussiness;
 			sourceTree = "<group>";
@@ -573,6 +603,8 @@
 		E29A1E241FFB343100B45EF1 /* Api */ = {
 			isa = PBXGroup;
 			children = (
+				E29A20EA1FFB89FE00B45EF1 /* BaseApi.h */,
+				E29A20EB1FFB89FE00B45EF1 /* BaseApi.m */,
 			);
 			path = Api;
 			sourceTree = "<group>";
@@ -616,6 +648,8 @@
 		E29A1E2A1FFB343100B45EF1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E29A20F01FFB8A2400B45EF1 /* BaseModel.h */,
+				E29A20F11FFB8A2400B45EF1 /* BaseModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1098,6 +1132,15 @@
 			path = Masonry;
 			sourceTree = "<group>";
 		};
+		E29A20E61FFB88F100B45EF1 /* BaseTabbarController */ = {
+			isa = PBXGroup;
+			children = (
+				E29A20E71FFB898000B45EF1 /* BaseTabbarController.h */,
+				E29A20E81FFB898000B45EF1 /* BaseTabbarController.m */,
+			);
+			path = BaseTabbarController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1231,11 +1274,13 @@
 				E29A1FE31FFB61ED00B45EF1 /* UIProgressView+AFNetworking.m in Sources */,
 				E29A1F901FFB609C00B45EF1 /* NSArray+Sort.m in Sources */,
 				E29A20B81FFB640F00B45EF1 /* SDWebImageManager.m in Sources */,
+				E29A20E51FFB782800B45EF1 /* HomeViewController.swift in Sources */,
 				E29A20AE1FFB640F00B45EF1 /* YYWebImageManager.m in Sources */,
 				E29A1F821FFB609C00B45EF1 /* UIButton+Extention.swift in Sources */,
 				E29A20CE1FFB640F00B45EF1 /* MJDIYHeader.m in Sources */,
 				E29A1FE11FFB61ED00B45EF1 /* UIButton+AFNetworking.m in Sources */,
 				E29A1FD71FFB61ED00B45EF1 /* AFSecurityPolicy.m in Sources */,
+				E29A20F81FFB8A5500B45EF1 /* BaseView.m in Sources */,
 				E29A1F831FFB609C00B45EF1 /* UIView+Frame.m in Sources */,
 				E29A1F7A1FFB609C00B45EF1 /* NSString+TimeStamp.m in Sources */,
 				E29A1FF21FFB63C500B45EF1 /* GTMBase64.m in Sources */,
@@ -1243,8 +1288,10 @@
 				E29A1FDD1FFB61ED00B45EF1 /* AFAutoPurgingImageCache.m in Sources */,
 				E29A1E0C1FFB326F00B45EF1 /* ViewController.m in Sources */,
 				E29A20DA1FFB640F00B45EF1 /* MASCompositeConstraint.m in Sources */,
+				E29A20E91FFB898000B45EF1 /* BaseTabbarController.m in Sources */,
 				E29A1F861FFB609C00B45EF1 /* NSString+Extention.m in Sources */,
 				E29A1FE41FFB61ED00B45EF1 /* UIRefreshControl+AFNetworking.m in Sources */,
+				E29A20FB1FFB8A6300B45EF1 /* BaseViewModel.m in Sources */,
 				E29A20BD1FFB640F00B45EF1 /* UIImageView+HighlightedWebCache.m in Sources */,
 				E29A20A01FFB640F00B45EF1 /* YYKVStorage.m in Sources */,
 				E29A1F881FFB609C00B45EF1 /* UIButton+BackgroundColor.swift in Sources */,
@@ -1265,11 +1312,11 @@
 				E29A20CA1FFB640F00B45EF1 /* MJRefreshBackStateFooter.m in Sources */,
 				E29A20C81FFB640F00B45EF1 /* MJRefreshBackGifFooter.m in Sources */,
 				E29A20C91FFB640F00B45EF1 /* MJRefreshBackNormalFooter.m in Sources */,
-				E29A1E891FFB3E8E00B45EF1 /* HomeViewController.swift in Sources */,
 				E29A20DD1FFB640F00B45EF1 /* MASLayoutConstraint.m in Sources */,
 				E29A20BF1FFB640F00B45EF1 /* UIView+WebCacheOperation.m in Sources */,
 				E29A20E11FFB640F00B45EF1 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				E29A20E31FFB640F00B45EF1 /* ViewController+MASAdditions.m in Sources */,
+				E29A20EF1FFB8A1400B45EF1 /* BaseBussiness.m in Sources */,
 				E29A1F871FFB609C00B45EF1 /* NSString+URLEncoding.m in Sources */,
 				E29A1F7F1FFB609C00B45EF1 /* UIView+Gesture.m in Sources */,
 				E29A1F9F1FFB615D00B45EF1 /* HQCustomToast.m in Sources */,
@@ -1282,6 +1329,7 @@
 				E29A1FF11FFB63C500B45EF1 /* DESUtility.m in Sources */,
 				E29A1E9C1FFB40C900B45EF1 /* SystemConfig.swift in Sources */,
 				E29A20BB1FFB640F00B45EF1 /* UIImage+GIF.m in Sources */,
+				E29A20EC1FFB89FE00B45EF1 /* BaseApi.m in Sources */,
 				E29A209B1FFB640F00B45EF1 /* NSObject+YYModel.m in Sources */,
 				E29A20AD1FFB640F00B45EF1 /* YYImageCache.m in Sources */,
 				E29A20A91FFB640F00B45EF1 /* YYFrameImage.m in Sources */,
@@ -1321,6 +1369,7 @@
 				E29A20BE1FFB640F00B45EF1 /* UIImageView+WebCache.m in Sources */,
 				E29A20C11FFB640F00B45EF1 /* MJRefreshBackFooter.m in Sources */,
 				E29A20AB1FFB640F00B45EF1 /* YYImageCoder.m in Sources */,
+				E29A20F21FFB8A2400B45EF1 /* BaseModel.m in Sources */,
 				E29A20D41FFB640F00B45EF1 /* UIScrollView+MJRefresh.m in Sources */,
 				E29A20B41FFB640F00B45EF1 /* SDWebImageCompat.m in Sources */,
 				E29A20AF1FFB640F00B45EF1 /* YYWebImageOperation.m in Sources */,
@@ -1345,6 +1394,7 @@
 				E29A20B61FFB640F00B45EF1 /* SDWebImageDownloader.m in Sources */,
 				E29A1F851FFB609C00B45EF1 /* UIView+Frmae.swift in Sources */,
 				E29A20AC1FFB640F00B45EF1 /* YYSpriteSheetImage.m in Sources */,
+				E29A20F51FFB8A4600B45EF1 /* BaseStorage.m in Sources */,
 				E29A20C61FFB640F00B45EF1 /* MJRefreshAutoNormalFooter.m in Sources */,
 				E29A1FDF1FFB61ED00B45EF1 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				E29A1FE51FFB61ED00B45EF1 /* UIWebView+AFNetworking.m in Sources */,
