@@ -11,7 +11,7 @@
 
 extern NSString *const NetworkErrorToastStr;
 
-typedef void(^WaitingBlock)();
+typedef void(^WaitingBlock)(void);
 
 @interface HQCustomToast : NSObject
 

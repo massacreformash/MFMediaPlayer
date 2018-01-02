@@ -233,9 +233,12 @@ static void URLInBlackListAdd(NSURL *url) {
             }
         }
     });
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
     int32_t cur = OSAtomicIncrement32(&counter);
     if (cur < 0) cur = -cur;
     return queues[(cur) % queueCount];
+#pragma GCC diagnostic pop
     #undef MAX_QUEUE_COUNT
 }
 
@@ -374,7 +377,10 @@ static void URLInBlackListAdd(NSURL *url) {
         // request image from web
         [_lock lock];
         if (![self isCancelled]) {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
             _connection = [[NSURLConnection alloc] initWithRequest:_request delegate:[_YYWebImageWeakProxy proxyWithTarget:self]];
+#pragma clang diagnostic pop
             if (![_request.URL isFileURL] && (_options & YYWebImageOptionShowNetworkActivity)) {
                 [YYWebImageManager incrementNetworkActivityCount];
             }

@@ -85,7 +85,10 @@
 #endif
 
         self.executing = YES;
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
         self.connection = [[NSURLConnection alloc] initWithRequest:self.request delegate:self startImmediately:NO];
+#pragma GCC diagnostic pop
         self.thread = [NSThread currentThread];
     }
 

@@ -15,7 +15,6 @@
 		E29A1E171FFB326F00B45EF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A1E161FFB326F00B45EF1 /* main.m */; };
 		E29A1E2B1FFB343100B45EF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A1E291FFB343100B45EF1 /* AppDelegate.m */; };
 		E29A1E2E1FFB3C2400B45EF1 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A1E2D1FFB3C2400B45EF1 /* BaseViewController.m */; };
-		E29A1E321FFB3CCA00B45EF1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E29A1E311FFB3CCA00B45EF1 /* Info.plist */; };
 		E29A1E891FFB3E8E00B45EF1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A1E881FFB3E8E00B45EF1 /* HomeViewController.swift */; };
 		E29A1E8C1FFB406800B45EF1 /* UtilitiesColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A1E8A1FFB406700B45EF1 /* UtilitiesColor.m */; };
 		E29A1E991FFB40C900B45EF1 /* ShareColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A1E8E1FFB40C800B45EF1 /* ShareColor.swift */; };
@@ -60,8 +59,6 @@
 		E29A1FD81FFB61ED00B45EF1 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A1FB91FFB61ED00B45EF1 /* AFURLRequestSerialization.m */; };
 		E29A1FD91FFB61ED00B45EF1 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A1FBB1FFB61ED00B45EF1 /* AFURLResponseSerialization.m */; };
 		E29A1FDA1FFB61ED00B45EF1 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A1FBD1FFB61ED00B45EF1 /* AFURLSessionManager.m */; };
-		E29A1FDB1FFB61ED00B45EF1 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = E29A1FBE1FFB61ED00B45EF1 /* LICENSE */; };
-		E29A1FDC1FFB61ED00B45EF1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E29A1FBF1FFB61ED00B45EF1 /* README.md */; };
 		E29A1FDD1FFB61ED00B45EF1 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A1FC21FFB61ED00B45EF1 /* AFAutoPurgingImageCache.m */; };
 		E29A1FDE1FFB61ED00B45EF1 /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A1FC41FFB61ED00B45EF1 /* AFImageDownloader.m */; };
 		E29A1FDF1FFB61ED00B45EF1 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A1FC61FFB61ED00B45EF1 /* AFNetworkActivityIndicatorManager.m */; };
@@ -95,8 +92,6 @@
 		E29A20AD1FFB640F00B45EF1 /* YYImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A20201FFB640E00B45EF1 /* YYImageCache.m */; };
 		E29A20AE1FFB640F00B45EF1 /* YYWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A20231FFB640E00B45EF1 /* YYWebImageManager.m */; };
 		E29A20AF1FFB640F00B45EF1 /* YYWebImageOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A20251FFB640E00B45EF1 /* YYWebImageOperation.m */; };
-		E29A20B01FFB640F00B45EF1 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = E29A20271FFB640E00B45EF1 /* LICENSE */; };
-		E29A20B11FFB640F00B45EF1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E29A20281FFB640E00B45EF1 /* README.md */; };
 		E29A20B21FFB640F00B45EF1 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A202B1FFB640E00B45EF1 /* NSData+ImageContentType.m */; };
 		E29A20B31FFB640F00B45EF1 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A202D1FFB640E00B45EF1 /* SDImageCache.m */; };
 		E29A20B41FFB640F00B45EF1 /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A202F1FFB640E00B45EF1 /* SDWebImageCompat.m */; };
@@ -135,8 +130,6 @@
 		E29A20D51FFB640F00B45EF1 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A20771FFB640E00B45EF1 /* UIView+MJExtension.m */; };
 		E29A20D61FFB640F00B45EF1 /* DeviceVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A207A1FFB640E00B45EF1 /* DeviceVersion.m */; };
 		E29A20D71FFB640F00B45EF1 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A207E1FFB640E00B45EF1 /* MBProgressHUD.m */; };
-		E29A20D81FFB640F00B45EF1 /* QiYuCustomerService.textClipping in Resources */ = {isa = PBXBuildFile; fileRef = E29A207F1FFB640E00B45EF1 /* QiYuCustomerService.textClipping */; };
-		E29A20D91FFB640F00B45EF1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E29A20811FFB640F00B45EF1 /* Info.plist */; };
 		E29A20DA1FFB640F00B45EF1 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A20831FFB640F00B45EF1 /* MASCompositeConstraint.m */; };
 		E29A20DB1FFB640F00B45EF1 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A20861FFB640F00B45EF1 /* MASConstraint.m */; };
 		E29A20DC1FFB640F00B45EF1 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A20881FFB640F00B45EF1 /* MASConstraintMaker.m */; };
@@ -1167,18 +1160,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E29A20D11FFB640F00B45EF1 /* sl_mj_refresh_diy@2x.gif in Resources */,
-				E29A1FDC1FFB61ED00B45EF1 /* README.md in Resources */,
-				E29A1E321FFB3CCA00B45EF1 /* Info.plist in Resources */,
 				E29A1E141FFB326F00B45EF1 /* LaunchScreen.storyboard in Resources */,
-				E29A20D81FFB640F00B45EF1 /* QiYuCustomerService.textClipping in Resources */,
-				E29A20B01FFB640F00B45EF1 /* LICENSE in Resources */,
 				E29A20D21FFB640F00B45EF1 /* sl_mj_refresh_diy@3x.gif in Resources */,
 				E29A1E111FFB326F00B45EF1 /* Assets.xcassets in Resources */,
 				E29A1E0F1FFB326F00B45EF1 /* Main.storyboard in Resources */,
-				E29A20B11FFB640F00B45EF1 /* README.md in Resources */,
-				E29A1FDB1FFB61ED00B45EF1 /* LICENSE in Resources */,
 				E29A20CF1FFB640F00B45EF1 /* MJRefresh.bundle in Resources */,
-				E29A20D91FFB640F00B45EF1 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1504,7 +1490,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CN246JKGKD;
-				GCC_PREFIX_HEADER = MediaPlayer/SupportingFiles/prefixHeader.pch;
+				GCC_PREFIX_HEADER = MediaPlayer/SupportingFiles/PrefixHeader.pch;
 				INFOPLIST_FILE = MediaPlayer/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tech.mfmal.mediaplayer.MediaPlayer;
@@ -1522,7 +1508,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CN246JKGKD;
-				GCC_PREFIX_HEADER = MediaPlayer/SupportingFiles/prefixHeader.pch;
+				GCC_PREFIX_HEADER = MediaPlayer/SupportingFiles/PrefixHeader.pch;
 				INFOPLIST_FILE = MediaPlayer/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tech.mfmal.mediaplayer.MediaPlayer;

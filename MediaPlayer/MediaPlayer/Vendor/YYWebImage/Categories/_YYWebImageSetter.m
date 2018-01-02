@@ -17,6 +17,8 @@ NSString *const _YYWebImageFadeAnimationKey = @"YYWebImageFade";
 const NSTimeInterval _YYWebImageFadeTime = 0.2;
 const NSTimeInterval _YYWebImageProgressiveFadeTime = 0.4;
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 
 @implementation _YYWebImageSetter {
     dispatch_semaphore_t _lock;
@@ -99,5 +101,7 @@ const NSTimeInterval _YYWebImageProgressiveFadeTime = 0.4;
     });
     return queue;
 }
+
+#pragma clang diagnostic pop
 
 @end

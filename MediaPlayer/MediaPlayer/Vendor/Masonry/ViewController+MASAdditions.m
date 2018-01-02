@@ -9,6 +9,8 @@
 #import "ViewController+MASAdditions.h"
 
 #ifdef MAS_VIEW_CONTROLLER
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
 
 @implementation MAS_VIEW_CONTROLLER (MASAdditions)
 
@@ -32,7 +34,7 @@
     return [[MASViewAttribute alloc] initWithView:self.view item:self.bottomLayoutGuide layoutAttribute:NSLayoutAttributeBottom];
 }
 
-
+#pragma GCC diagnostic pop
 
 @end
 

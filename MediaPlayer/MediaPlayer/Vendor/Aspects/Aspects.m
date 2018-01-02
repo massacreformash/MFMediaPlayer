@@ -159,10 +159,13 @@ static BOOL aspect_remove(AspectIdentifier *aspect, NSError * __autoreleasing *e
 }
 
 static void aspect_performLocked(dispatch_block_t block) {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
     static OSSpinLock aspect_lock = OS_SPINLOCK_INIT;
     OSSpinLockLock(&aspect_lock);
     block();
     OSSpinLockUnlock(&aspect_lock);
+#pragma clang diagnostic pop
 }
 
 static SEL aspect_aliasForSelector(SEL selector) {

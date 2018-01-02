@@ -2795,6 +2795,8 @@ CGImageRef YYCGImageCreateWithWebPData(CFDataRef webpData,
 - (void)yy_saveToAlbumWithCompletionBlock:(void(^)(NSURL *assetURL, NSError *error))completionBlock {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSData *data = [self _yy_dataRepresentationForSystem:YES];
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
         ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
         [library writeImageDataToSavedPhotosAlbum:data metadata:nil completionBlock:^(NSURL *assetURL, NSError *error){
             if (!completionBlock) return;
@@ -2807,6 +2809,7 @@ CGImageRef YYCGImageCreateWithWebPData(CFDataRef webpData,
             }
         }];
     });
+#pragma GCC diagnostic pop
 }
 
 - (NSData *)yy_imageDataRepresentation {
