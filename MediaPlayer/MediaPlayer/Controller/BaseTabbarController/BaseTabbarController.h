@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-typedef BOOL(^TabbarControllerShouldHijackhandler)(UITabBarController *tabbarController, UIViewController *viewController);
+typedef BOOL(^TabbarControllerShouldHijackHandler)(UITabBarController *tabbarController, UIViewController *viewController);
 typedef BOOL(^TabBarControllerDidHijackHandler)(UITabBarController *tabbarController, UIViewController *viewController);
 
 @interface BaseTabbarController : UITabBarController

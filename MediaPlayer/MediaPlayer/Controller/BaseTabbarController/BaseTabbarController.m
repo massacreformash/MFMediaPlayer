@@ -10,6 +10,10 @@
 
 @interface BaseTabbarController ()
 
+@property (nonatomic, assign) BOOL ignoreNextSelection;
+@property (nonatomic, copy) TabbarControllerShouldHijackHandler shouldHijackHandler;
+@property (nonatomic, copy) TabBarControllerDidHijackHandler didHijachHandler;
+
 @end
 
 @implementation BaseTabbarController
@@ -17,8 +21,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self p_initOwnProperties];
 }
 
-
+#pragma mark - init
+- (void)p_initOwnProperties {
+    self.ignoreNextSelection = false;
+}
 
 @end
