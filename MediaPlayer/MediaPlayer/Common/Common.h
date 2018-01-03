@@ -37,9 +37,9 @@ object]
 #define ParameterFor(iPhoneParam ,iPadParam) (!isiPad ? iPhoneParam : iPadParam)
 
 // 横屏
-#define isLandScape (isLandScapeLeft || isLandScapeRight)
-#define isLandScapeLeft ([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationLandscapeLeft)
-#define isLandScapeRight ([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationLandscapeRight)
+#define isLandscape (isLandscapeLeft || isLandscapeRight)
+#define isLandscapeLeft ([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationLandscapeLeft)
+#define isLandscapeRight ([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationLandscapeRight)
 
 #pragma mark - IOS版本
 /** 获取IOS版本号并转换为float类型  7.0  8.0 */

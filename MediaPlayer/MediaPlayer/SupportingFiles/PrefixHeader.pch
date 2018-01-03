@@ -19,7 +19,7 @@
 #import "HQCustomToast.h"
 #import "NetWork.h"
 #import "NotificationName.h"
-#import "SystemConfig.h"
+#import "NSString+Extention.h"
 
 #import "HQCustomToast.h"
 

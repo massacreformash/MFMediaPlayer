@@ -19,7 +19,6 @@
 		E29A1E991FFB40C900B45EF1 /* ShareColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A1E8E1FFB40C800B45EF1 /* ShareColor.swift */; };
 		E29A1E9A1FFB40C900B45EF1 /* ShareFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A1E901FFB40C800B45EF1 /* ShareFont.swift */; };
 		E29A1E9B1FFB40C900B45EF1 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A1E941FFB40C800B45EF1 /* Common.swift */; };
-		E29A1E9C1FFB40C900B45EF1 /* SystemConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A1E951FFB40C800B45EF1 /* SystemConfig.swift */; };
 		E29A1F771FFB609C00B45EF1 /* UIImageView+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A1F471FFB609600B45EF1 /* UIImageView+Extention.swift */; };
 		E29A1F791FFB609C00B45EF1 /* NSString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A1F4A1FFB609600B45EF1 /* NSString+Extension.swift */; };
 		E29A1F7A1FFB609C00B45EF1 /* NSString+TimeStamp.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A1F4B1FFB609600B45EF1 /* NSString+TimeStamp.m */; };
@@ -147,6 +146,12 @@
 		E29A20F51FFB8A4600B45EF1 /* BaseStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A20F41FFB8A4600B45EF1 /* BaseStorage.m */; };
 		E29A20F81FFB8A5500B45EF1 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A20F71FFB8A5500B45EF1 /* BaseView.m */; };
 		E29A20FB1FFB8A6300B45EF1 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A20FA1FFB8A6300B45EF1 /* BaseViewModel.m */; };
+		E29A20FE1FFC74BA00B45EF1 /* BaseTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A20FD1FFC74BA00B45EF1 /* BaseTabbar.m */; };
+		E29A21011FFC813E00B45EF1 /* BaseTabbarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A21001FFC813E00B45EF1 /* BaseTabbarItem.m */; };
+		E29A21041FFC816E00B45EF1 /* BaseTabbarItemContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A21031FFC816E00B45EF1 /* BaseTabbarItemContainer.m */; };
+		E29A21071FFC818500B45EF1 /* BaseTabBarItemContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A21061FFC818500B45EF1 /* BaseTabBarItemContentView.m */; };
+		E29A210A1FFC81E300B45EF1 /* BaseTabbarBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A21091FFC81E300B45EF1 /* BaseTabbarBadgeView.m */; };
+		E29A210D1FFCC48C00B45EF1 /* SystemConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A210B1FFCC48C00B45EF1 /* SystemConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -173,11 +178,9 @@
 		E29A1E8E1FFB40C800B45EF1 /* ShareColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareColor.swift; sourceTree = "<group>"; };
 		E29A1E8F1FFB40C800B45EF1 /* CommonPadding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonPadding.h; sourceTree = "<group>"; };
 		E29A1E901FFB40C800B45EF1 /* ShareFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareFont.swift; sourceTree = "<group>"; };
-		E29A1E911FFB40C800B45EF1 /* SystemConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemConfig.h; sourceTree = "<group>"; };
 		E29A1E921FFB40C800B45EF1 /* UserDefaultKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultKey.h; sourceTree = "<group>"; };
 		E29A1E931FFB40C800B45EF1 /* LoginStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginStatus.h; sourceTree = "<group>"; };
 		E29A1E941FFB40C800B45EF1 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
-		E29A1E951FFB40C800B45EF1 /* SystemConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemConfig.swift; sourceTree = "<group>"; };
 		E29A1E961FFB40C900B45EF1 /* NotificationName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationName.h; sourceTree = "<group>"; };
 		E29A1E971FFB40C900B45EF1 /* NetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWork.h; sourceTree = "<group>"; };
 		E29A1E981FFB40C900B45EF1 /* CommonFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonFont.h; sourceTree = "<group>"; };
@@ -447,6 +450,18 @@
 		E29A20F71FFB8A5500B45EF1 /* BaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
 		E29A20F91FFB8A6300B45EF1 /* BaseViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
 		E29A20FA1FFB8A6300B45EF1 /* BaseViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
+		E29A20FC1FFC74BA00B45EF1 /* BaseTabbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabbar.h; sourceTree = "<group>"; };
+		E29A20FD1FFC74BA00B45EF1 /* BaseTabbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabbar.m; sourceTree = "<group>"; };
+		E29A20FF1FFC813E00B45EF1 /* BaseTabbarItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabbarItem.h; sourceTree = "<group>"; };
+		E29A21001FFC813E00B45EF1 /* BaseTabbarItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabbarItem.m; sourceTree = "<group>"; };
+		E29A21021FFC816E00B45EF1 /* BaseTabbarItemContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabbarItemContainer.h; sourceTree = "<group>"; };
+		E29A21031FFC816E00B45EF1 /* BaseTabbarItemContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabbarItemContainer.m; sourceTree = "<group>"; };
+		E29A21051FFC818500B45EF1 /* BaseTabBarItemContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabBarItemContentView.h; sourceTree = "<group>"; };
+		E29A21061FFC818500B45EF1 /* BaseTabBarItemContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarItemContentView.m; sourceTree = "<group>"; };
+		E29A21081FFC81E300B45EF1 /* BaseTabbarBadgeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabbarBadgeView.h; sourceTree = "<group>"; };
+		E29A21091FFC81E300B45EF1 /* BaseTabbarBadgeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabbarBadgeView.m; sourceTree = "<group>"; };
+		E29A210B1FFCC48C00B45EF1 /* SystemConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SystemConfig.swift; path = ../../../../../../.Trash/SystemConfig.swift; sourceTree = "<group>"; };
+		E29A210C1FFCC48C00B45EF1 /* SystemConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SystemConfig.h; path = ../../../../../../.Trash/SystemConfig.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -622,9 +637,9 @@
 				E29A1E961FFB40C900B45EF1 /* NotificationName.h */,
 				E29A1E8E1FFB40C800B45EF1 /* ShareColor.swift */,
 				E29A1E901FFB40C800B45EF1 /* ShareFont.swift */,
-				E29A1E911FFB40C800B45EF1 /* SystemConfig.h */,
-				E29A1E951FFB40C800B45EF1 /* SystemConfig.swift */,
 				E29A1E921FFB40C800B45EF1 /* UserDefaultKey.h */,
+				E29A210C1FFCC48C00B45EF1 /* SystemConfig.h */,
+				E29A210B1FFCC48C00B45EF1 /* SystemConfig.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -1137,6 +1152,16 @@
 			children = (
 				E29A20E71FFB898000B45EF1 /* BaseTabbarController.h */,
 				E29A20E81FFB898000B45EF1 /* BaseTabbarController.m */,
+				E29A20FC1FFC74BA00B45EF1 /* BaseTabbar.h */,
+				E29A20FD1FFC74BA00B45EF1 /* BaseTabbar.m */,
+				E29A20FF1FFC813E00B45EF1 /* BaseTabbarItem.h */,
+				E29A21001FFC813E00B45EF1 /* BaseTabbarItem.m */,
+				E29A21021FFC816E00B45EF1 /* BaseTabbarItemContainer.h */,
+				E29A21031FFC816E00B45EF1 /* BaseTabbarItemContainer.m */,
+				E29A21051FFC818500B45EF1 /* BaseTabBarItemContentView.h */,
+				E29A21061FFC818500B45EF1 /* BaseTabBarItemContentView.m */,
+				E29A21081FFC81E300B45EF1 /* BaseTabbarBadgeView.h */,
+				E29A21091FFC81E300B45EF1 /* BaseTabbarBadgeView.m */,
 			);
 			path = BaseTabbarController;
 			sourceTree = "<group>";
@@ -1276,11 +1301,13 @@
 				E29A20B81FFB640F00B45EF1 /* SDWebImageManager.m in Sources */,
 				E29A20E51FFB782800B45EF1 /* HomeViewController.swift in Sources */,
 				E29A20AE1FFB640F00B45EF1 /* YYWebImageManager.m in Sources */,
+				E29A210A1FFC81E300B45EF1 /* BaseTabbarBadgeView.m in Sources */,
 				E29A1F821FFB609C00B45EF1 /* UIButton+Extention.swift in Sources */,
 				E29A20CE1FFB640F00B45EF1 /* MJDIYHeader.m in Sources */,
 				E29A1FE11FFB61ED00B45EF1 /* UIButton+AFNetworking.m in Sources */,
 				E29A1FD71FFB61ED00B45EF1 /* AFSecurityPolicy.m in Sources */,
 				E29A20F81FFB8A5500B45EF1 /* BaseView.m in Sources */,
+				E29A21071FFC818500B45EF1 /* BaseTabBarItemContentView.m in Sources */,
 				E29A1F831FFB609C00B45EF1 /* UIView+Frame.m in Sources */,
 				E29A1F7A1FFB609C00B45EF1 /* NSString+TimeStamp.m in Sources */,
 				E29A1FF21FFB63C500B45EF1 /* GTMBase64.m in Sources */,
@@ -1327,7 +1354,6 @@
 				E29A1F801FFB609C00B45EF1 /* NSArray+Json.m in Sources */,
 				E29A20BA1FFB640F00B45EF1 /* UIButton+WebCache.m in Sources */,
 				E29A1FF11FFB63C500B45EF1 /* DESUtility.m in Sources */,
-				E29A1E9C1FFB40C900B45EF1 /* SystemConfig.swift in Sources */,
 				E29A20BB1FFB640F00B45EF1 /* UIImage+GIF.m in Sources */,
 				E29A20EC1FFB89FE00B45EF1 /* BaseApi.m in Sources */,
 				E29A209B1FFB640F00B45EF1 /* NSObject+YYModel.m in Sources */,
@@ -1342,9 +1368,12 @@
 				E29A20CD1FFB640F00B45EF1 /* MJRefreshStateHeader.m in Sources */,
 				E29A20C41FFB640F00B45EF1 /* MJRefreshHeader.m in Sources */,
 				E29A20C31FFB640F00B45EF1 /* MJRefreshFooter.m in Sources */,
+				E29A21011FFC813E00B45EF1 /* BaseTabbarItem.m in Sources */,
 				E29A1F771FFB609C00B45EF1 /* UIImageView+Extention.swift in Sources */,
+				E29A210D1FFCC48C00B45EF1 /* SystemConfig.swift in Sources */,
 				E29A20C21FFB640F00B45EF1 /* MJRefreshComponent.m in Sources */,
 				E29A20DE1FFB640F00B45EF1 /* MASViewAttribute.m in Sources */,
+				E29A21041FFC816E00B45EF1 /* BaseTabbarItemContainer.m in Sources */,
 				E29A20A71FFB640F00B45EF1 /* UIImageView+YYWebImage.m in Sources */,
 				E29A1FE21FFB61ED00B45EF1 /* UIImageView+AFNetworking.m in Sources */,
 				E29A20A31FFB640F00B45EF1 /* CALayer+YYWebImage.m in Sources */,
@@ -1363,6 +1392,7 @@
 				E29A20B31FFB640F00B45EF1 /* SDImageCache.m in Sources */,
 				E29A20A61FFB640F00B45EF1 /* UIImage+YYWebImage.m in Sources */,
 				E29A1F9E1FFB615D00B45EF1 /* HQToast.m in Sources */,
+				E29A20FE1FFC74BA00B45EF1 /* BaseTabbar.m in Sources */,
 				E29A1E8C1FFB406800B45EF1 /* UtilitiesColor.m in Sources */,
 				E29A20A11FFB640F00B45EF1 /* YYMemoryCache.m in Sources */,
 				E29A20A81FFB640F00B45EF1 /* YYAnimatedImageView.m in Sources */,

@@ -11,8 +11,8 @@
 @interface BaseTabbarController ()
 
 @property (nonatomic, assign) BOOL ignoreNextSelection;
-@property (nonatomic, copy) TabbarControllerShouldHijackHandler shouldHijackHandler;
-@property (nonatomic, copy) TabBarControllerDidHijackHandler didHijachHandler;
+@property (nonatomic, copy) TabbarControllerShouldHookHandler shouldHookHandler;
+@property (nonatomic, copy) TabBarControllerDidHookHandler didHookHandler;
 
 @end
 
@@ -22,6 +22,12 @@
     [super viewDidLoad];
     
     [self p_initOwnProperties];
+}
+
+#pragma mark - setter
+- (void)setSelectedViewController:(__kindof UIViewController *)selectedViewController {
+    [super setSelectedViewController:selectedViewController];
+    
 }
 
 #pragma mark - init
