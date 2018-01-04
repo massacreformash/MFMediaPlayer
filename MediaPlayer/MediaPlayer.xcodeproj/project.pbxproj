@@ -151,7 +151,7 @@
 		E29A21041FFC816E00B45EF1 /* BaseTabbarItemContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A21031FFC816E00B45EF1 /* BaseTabbarItemContainer.m */; };
 		E29A21071FFC818500B45EF1 /* BaseTabBarItemContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A21061FFC818500B45EF1 /* BaseTabBarItemContentView.m */; };
 		E29A210A1FFC81E300B45EF1 /* BaseTabbarBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A21091FFC81E300B45EF1 /* BaseTabbarBadgeView.m */; };
-		E29A210D1FFCC48C00B45EF1 /* SystemConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A210B1FFCC48C00B45EF1 /* SystemConfig.swift */; };
+		E29A21101FFE360200B45EF1 /* SystemConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A210E1FFE360100B45EF1 /* SystemConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -460,8 +460,8 @@
 		E29A21061FFC818500B45EF1 /* BaseTabBarItemContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarItemContentView.m; sourceTree = "<group>"; };
 		E29A21081FFC81E300B45EF1 /* BaseTabbarBadgeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabbarBadgeView.h; sourceTree = "<group>"; };
 		E29A21091FFC81E300B45EF1 /* BaseTabbarBadgeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabbarBadgeView.m; sourceTree = "<group>"; };
-		E29A210B1FFCC48C00B45EF1 /* SystemConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SystemConfig.swift; path = ../../../../../../.Trash/SystemConfig.swift; sourceTree = "<group>"; };
-		E29A210C1FFCC48C00B45EF1 /* SystemConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SystemConfig.h; path = ../../../../../../.Trash/SystemConfig.h; sourceTree = "<group>"; };
+		E29A210E1FFE360100B45EF1 /* SystemConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SystemConfig.swift; path = ../../../../../../Desktop/work/private_project/HqyxStudentLiveiOS/StudentLive/StudentLive/Common/SystemConfig.swift; sourceTree = "<group>"; };
+		E29A210F1FFE360200B45EF1 /* SystemConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SystemConfig.h; path = ../../../../../../Desktop/work/private_project/HqyxStudentLiveiOS/StudentLive/StudentLive/Common/SystemConfig.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -638,8 +638,8 @@
 				E29A1E8E1FFB40C800B45EF1 /* ShareColor.swift */,
 				E29A1E901FFB40C800B45EF1 /* ShareFont.swift */,
 				E29A1E921FFB40C800B45EF1 /* UserDefaultKey.h */,
-				E29A210C1FFCC48C00B45EF1 /* SystemConfig.h */,
-				E29A210B1FFCC48C00B45EF1 /* SystemConfig.swift */,
+				E29A210F1FFE360200B45EF1 /* SystemConfig.h */,
+				E29A210E1FFE360100B45EF1 /* SystemConfig.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -1370,7 +1370,7 @@
 				E29A20C31FFB640F00B45EF1 /* MJRefreshFooter.m in Sources */,
 				E29A21011FFC813E00B45EF1 /* BaseTabbarItem.m in Sources */,
 				E29A1F771FFB609C00B45EF1 /* UIImageView+Extention.swift in Sources */,
-				E29A210D1FFCC48C00B45EF1 /* SystemConfig.swift in Sources */,
+				E29A21101FFE360200B45EF1 /* SystemConfig.swift in Sources */,
 				E29A20C21FFB640F00B45EF1 /* MJRefreshComponent.m in Sources */,
 				E29A20DE1FFB640F00B45EF1 /* MASViewAttribute.m in Sources */,
 				E29A21041FFC816E00B45EF1 /* BaseTabbarItemContainer.m in Sources */,

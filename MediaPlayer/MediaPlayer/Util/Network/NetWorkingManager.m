@@ -36,7 +36,7 @@ NSString * connectingIPhoneNetworkNotifation = @"connectingIPhoneNetworkNotifati
 - (AFHTTPSessionManager *)manager{
     if (!_manager) {
         _manager = [[AFHTTPSessionManager alloc] init];
-//        HQLog(@"______%@",BASE_URL);
+//        MPLog(@"______%@",BASE_URL);
         [self p_configSecurityPolicyIfNeeded];
         AFJSONRequestSerializer *requset = [AFJSONRequestSerializer serializer];
         [requset setTimeoutInterval:kRequestTimeOutDuration];
@@ -169,7 +169,7 @@ constructingBodyWithBlock:bodyBlock
                               
                           } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                               failerrorBlock(error);
-                              HQLog(@"neterror%@", error);
+                              MPLog(@"neterror%@", error);
                               
                           }];
     return  task;
@@ -189,7 +189,7 @@ constructingBodyWithBlock:bodyBlock
                     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                         [self saveCookies];
                         successBlock(responseObject);
-                        //       HQLog(@"result:%@",responseObject);
+                        //       MPLog(@"result:%@",responseObject);
                         if ([responseObject[@"errcode"] isEqualToString:@"40002"]) {
                             [HQCustomToast showDialog:responseObject[@"errmsg"] time:1];
                         }
@@ -208,7 +208,7 @@ constructingBodyWithBlock:bodyBlock
         CGFloat quatily = (1024 * 1024) / (float)data.length;
         quatily = quatily > 0.5 ? quatily : 0.5;
         data =  UIImageJPEGRepresentation(image, quatily);
-        //        HQLog(@"quatily %f datalength %tuKB",quatily,(data.length / 1024) );
+        //        MPLog(@"quatily %f datalength %tuKB",quatily,(data.length / 1024) );
     }
     
     [self.manager POST:UrlUploadImage parameters:nil
@@ -218,12 +218,12 @@ constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
                             fileName:@"uploadImage_iOS.jpg"
                             mimeType:@"image/jpeg"];
 } progress:^(NSProgress * _Nonnull uploadProgress) {
-    //        HQLog(@"uploadProgress%@",uploadProgress);
+    //        MPLog(@"uploadProgress%@",uploadProgress);
 } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-    //        HQLog(@"uploadProgress%@",responseObject);
+    //        MPLog(@"uploadProgress%@",responseObject);
     success(responseObject);
 } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-    HQLog(@"error%@",error);
+    MPLog(@"error%@",error);
     failure(error);
 }];
 }
@@ -272,18 +272,18 @@ constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
         
         switch (status) {
             case AFNetworkReachabilityStatusUnknown:
-                HQLog(@"未知网络");
+                MPLog(@"未知网络");
                 break;
                 
             case AFNetworkReachabilityStatusNotReachable:
                 self.internetStatus = NotReachable;
                 [[NSNotificationCenter defaultCenter] postNotificationName:disConnectionNetworkNotifation
                                                                     object:nil];
-                HQLog(@"没有网络(断网)");
+                MPLog(@"没有网络(断网)");
                 break;
                 
             case AFNetworkReachabilityStatusReachableViaWWAN:
-                HQLog(@"手机自带网络");
+                MPLog(@"手机自带网络");
                 [self postNetworkInPhoneNet:ReachableVia3G oldStatus:self.internetStatus];
                 //                [self postNovicationWith:ReachableVia3G];
                 
@@ -294,7 +294,7 @@ constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
                 [self postNetworkInWifi:ReachableViaWiFi oldStatus:self.internetStatus];
                 //                [self postNovicationWith:ReachableViaWiFi];
                 self.internetStatus = ReachableViaWiFi;
-                HQLog(@"WIFI");
+                MPLog(@"WIFI");
                 break;
         }
     }];

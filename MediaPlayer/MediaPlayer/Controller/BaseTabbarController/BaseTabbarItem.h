@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@class BaseTabBarItemContentView;
 
 @interface BaseTabbarItem : UITabBarItem
+
+@property (nonatomic, strong) BaseTabBarItemContentView *contentView;
 
 @end

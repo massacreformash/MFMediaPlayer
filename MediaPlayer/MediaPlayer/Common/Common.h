@@ -7,9 +7,9 @@
 //
 
 #if DEBUG
-#define HQLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#define MPLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
 #else
-#define HQLog(...)
+#define MPLog(...)
 #endif
 
 #define HQLogFileStr(object) [NSString stringWithFormat:@"%@%s [Line %d] %@\n",[HQLogFile curretTime], \

@@ -10,4 +10,6 @@
 
 @interface BaseTabbarItemContainer : UIControl
 
+- (instancetype)initWithTarget:(NSObject *)target tag:(NSInteger)tag;
+
 @end

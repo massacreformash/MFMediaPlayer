@@ -18,12 +18,30 @@ typedef NS_ENUM(NSUInteger, BaseTabbarItemPositioning) {
 
 @protocol BaseTabbarDelegate
 
-- (void)baseTabbar:(UITabBar *)tabbar shouldSelectWithItem:(UITabBarItem *)tabbarItem;
-- (void)baseTabbar:(UITabBar *)tabbar shouldHookWithItem:(UITabBarItem *)tabbarItem;
+- (BOOL)baseTabbar:(UITabBar *)tabbar shouldSelectWithItem:(UITabBarItem *)tabbarItem;
+- (BOOL)baseTabbar:(UITabBar *)tabbar shouldHookWithItem:(UITabBarItem *)tabbarItem;
 - (void)baseTabbar:(UITabBar *)tabbar didHookedWithItem:(UITabBarItem *)tabbarItem;
 
 @end
 
 @interface BaseTabbar : UITabBar
+
+@property (nonatomic, weak) NSObject <BaseTabbarDelegate>*customDelegate;
+@property (nonatomic, weak) UITabBarController *tabbarController;
+
+@end
+
+@interface BaseTabbar (layout)
+
+- (void)setupLayout;
+
+@end
+
+@interface BaseTabbar (actions)
+
+- (void)p_reload;
+- (void)highlightAction:(id)sender;
+- (void)dehilightedAction:(id)sender;
+- (void)selectAction:(id)sender;
 
 @end

@@ -11,7 +11,6 @@
 
 @interface BaseTabBarItemContentView ()
 
-@property (nonatomic, assign) UIEdgeInsets insets;
 @property (nonatomic, assign) BOOL selected;
 @property (nonatomic, assign) BOOL highlighted;
 @property (nonatomic, assign) BOOL highlightedEnabled;
@@ -57,7 +56,7 @@
     self.imageView.tintColor = self.iconColor;
     self.backgroundColor = self.backdropColor;
     
-    [self p_setupLayouts];
+    [self setupLayouts];
 }
 
 - (void)p_setupDisplay {
@@ -69,7 +68,7 @@
     self.backgroundColor = self.selected ? self.highlightedBackdropColor : self.backdropColor;
 }
 
-- (void)p_setupLayouts {
+- (void)setupLayouts {
     CGFloat w = self.bounds.size.width;
     CGFloat h = self.bounds.size.height;
     BOOL isWide = isLandscape || (self.traitCollection.horizontalSizeClass == UIUserInterfaceSizeClassRegular);
@@ -278,7 +277,7 @@
 - (void)setTitle:(NSString *)title {
     _title = title;
     self.titleLabel.text = title;
-    [self p_setupLayouts];
+    [self setupLayouts];
 }
 
 - (void)setRenderingMode:(UIImageRenderingMode)renderingMode {
@@ -305,7 +304,7 @@
     if ([badgeValue neitherNilNorEmpty]) {
         self.badgeView.badgeValue = badgeValue;
         [self addSubview:self.badgeView];
-        [self p_setupLayouts];
+        [self setupLayouts];
     } else {
         [self.badgeView removeFromSuperview];
     }
@@ -326,7 +325,7 @@
     if (!badgeView.superview) {
         [self.badgeView removeFromSuperview];
     } else {
-        [self p_setupLayouts];
+        [self setupLayouts];
     }
 }
 
@@ -334,7 +333,7 @@
     UIOffset oldValue = _badgeOffset;
     _badgeOffset = badgeOffset;
     if (!UIOffsetEqualToOffset(_badgeOffset, oldValue)) {
-        [self p_setupLayouts];
+        [self setupLayouts];
     }
 }
 

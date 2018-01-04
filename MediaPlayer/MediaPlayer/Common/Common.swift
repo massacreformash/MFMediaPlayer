@@ -7,7 +7,7 @@
 //
 
 // MARK:自定义Log
-func HQLog<T>(_ message: T, file: String = #file, function: String = #function, lineNumber: Int = #line) {
+func MPLog<T>(_ message: T, file: String = #file, function: String = #function, lineNumber: Int = #line) {
     #if DEBUG
         let date = NSDate()
         let timeFormatter = DateFormatter()

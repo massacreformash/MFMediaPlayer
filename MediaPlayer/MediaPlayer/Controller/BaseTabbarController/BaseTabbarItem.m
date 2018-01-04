@@ -11,8 +11,6 @@
 
 @interface BaseTabbarItem ()
 
-@property (nonatomic, strong) BaseTabBarItemContentView *contentView;
-
 @end
 
 @implementation BaseTabbarItem

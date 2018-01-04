@@ -19,7 +19,7 @@ const char *kLastScrollOffsetY = "kLastScrollOffsetY";
 
 - (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
-    HQLog(@"dealloc");
+    MPLog(@"dealloc");
 }
 
 - (void)configDelegateAndKeyBoardMonitor {

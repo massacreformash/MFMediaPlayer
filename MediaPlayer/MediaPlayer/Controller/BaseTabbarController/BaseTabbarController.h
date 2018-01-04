@@ -8,9 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-typedef BOOL(^TabbarControllerShouldHookHandler)(UITabBarController *tabbarController, UIViewController *viewController);
-typedef BOOL(^TabBarControllerDidHookHandler)(UITabBarController *tabbarController, UIViewController *viewController);
+typedef BOOL(^TabbarControllerShouldHookHandler)(UITabBarController *tabbarController,
+                                                 UIViewController *viewController,
+                                                 NSInteger index);
+typedef BOOL(^TabBarControllerDidHookHandler)(UITabBarController *tabbarController,
+                                              UIViewController *viewController,
+                                              NSInteger index);
 
 @interface BaseTabbarController : UITabBarController
+
++ (void)printError:(NSString *)description;
 
 @end

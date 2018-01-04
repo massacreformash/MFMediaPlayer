@@ -45,18 +45,18 @@
     [mgr setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
         switch (status) {
             case AFNetworkReachabilityStatusUnknown:
-                HQLog(@"未知网络");
+                MPLog(@"未知网络");
                 break;
             case AFNetworkReachabilityStatusNotReachable:
-                HQLog(@"没有网络(断网)");
+                MPLog(@"没有网络(断网)");
                 [self p_postNotificationWithStatus:NotReachable];
                 break;
             case AFNetworkReachabilityStatusReachableViaWWAN:
-                HQLog(@"手机自带网络");
+                MPLog(@"手机自带网络");
                 [self p_postNotificationWithStatus:ReachableViaWWAN];
                 break;
             case AFNetworkReachabilityStatusReachableViaWiFi:
-                HQLog(@"WIFI");
+                MPLog(@"WIFI");
                 [self p_postNotificationWithStatus:ReachableViaWiFi];
                 break;
         }
