@@ -270,13 +270,14 @@
         return;
     }
     BaseTabbarItemContainer *container = sender;
-    [self p_selectWithItemIndex:container.tag - 1000 animated:true];
+    [self selectWithItemIndex:container.tag - 1000 animated:true];
 }
 
-- (void)p_selectWithItemIndex:(NSUInteger)idx animated:(BOOL)animated {
-    NSUInteger newIndex = MAX(0, idx);
-    NSUInteger currentIndex
-    = (self.selectedItem != nil) ? (([self.items indexOfObject:self.selectedItem]) ? NSNotFound : -1) : -1;
+- (void)selectWithItemIndex:(NSInteger)idx animated:(BOOL)animated {
+    NSInteger newIndex = MAX(0, idx);
+    NSInteger selectedIndex = [self.items indexOfObject:self.selectedItem];
+    NSInteger currentIndex
+    = (self.selectedItem != nil) ? (selectedIndex == NSNotFound ? -1 : selectedIndex) : -1;
     newIndex = [self p_validateIndex:newIndex];
     if (newIndex == NSIntegerMax) {
         return;
@@ -293,7 +294,6 @@
             }
             return;
         }
-        return;
     }
     
     if (currentIndex != newIndex) {

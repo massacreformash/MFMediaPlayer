@@ -13,4 +13,10 @@
 
 @property (nonatomic, strong) BaseTabBarItemContentView *contentView;
 
+- (instancetype)initWithContentView:(BaseTabBarItemContentView *)contentView
+                              title:(NSString *)title
+                              image:(UIImage *)image
+                      selectedImage:(UIImage *)selectedImage
+                                tag:(NSInteger)tag;
+
 @end

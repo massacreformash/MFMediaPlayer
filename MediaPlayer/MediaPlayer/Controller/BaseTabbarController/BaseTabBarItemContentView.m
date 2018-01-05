@@ -91,8 +91,8 @@
         [self.titleLabel sizeToFit];
         
         if (isWide) {
-            self.titleLabel.frame = CGRectMake((w - self.titleLabel.width / 2.0 + (SCREEN_SCALE == 3.0 ? 14.25 : 12.25)),
-                                               (h - self.titleLabel.height / 2.0),
+            self.titleLabel.frame = CGRectMake(((w - self.titleLabel.width) / 2.0 + (SCREEN_SCALE == 3.0 ? 14.25 : 12.25)),
+                                               ((h - self.titleLabel.height) / 2.0),
                                                self.titleLabel.width,
                                                self.titleLabel.height);
             self.imageView.frame = CGRectMake((self.titleLabel.origin.x / 2.0 - s - (SCREEN_SCALE == 3.0 ? 6.0 : 5.0)),
@@ -100,8 +100,8 @@
                                               s,
                                               s);
         } else {
-            self.titleLabel.frame = CGRectMake((w - self.titleLabel.width / 2.0),
-                                               (h - self.titleLabel.height - 1.0),
+            self.titleLabel.frame = CGRectMake(((w - self.titleLabel.width) / 2.0),
+                                               ((h - self.titleLabel.height) - 1.0),
                                                self.titleLabel.width,
                                                self.titleLabel.height);
             self.imageView.frame = CGRectMake(((w - s) / 2.0),
@@ -150,7 +150,7 @@
 - (void)deselectWithAnimation:(BOOL)animated completion:(void(^)(void))completion {
     self.selected = false;
     [self p_setupDisplay];
-    [self deselectWithAnimation:animated completion:completion];
+    [self deselectAnimation:true completion:nil];
 }
 
 - (void)reselectWithAnimation:(BOOL)animated completion:(void(^)(void))completion {
@@ -160,10 +160,10 @@
         if (self.highlightedEnabled == true && self.highlighted == true) {
             self.highlighted = false;
             [self dehighlightAnimation:animated completion:^{
-                [self reselectWithAnimation:animated completion:completion];
+                [self reselectAnimation:true completion:completion];
             }];
         } else {
-            [self reselectWithAnimation:animated completion:completion];
+            [self reselectAnimation:true completion:completion];
         }
     }
 }
@@ -339,7 +339,7 @@
 
 #pragma mark - lazyloads
 - (UIImageView *)imageView {
-    if (_imageView) {
+    if (!_imageView) {
         _imageView = [[UIImageView alloc] initWithFrame:CGRectZero];
         _imageView.backgroundColor = [UIColor clearColor];
     }
@@ -347,7 +347,7 @@
 }
 
 - (UILabel *)titleLabel {
-    if (_titleLabel) {
+    if (!_titleLabel) {
         _titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
         _titleLabel.backgroundColor = [UIColor clearColor];
         _titleLabel.textColor = [UIColor clearColor];

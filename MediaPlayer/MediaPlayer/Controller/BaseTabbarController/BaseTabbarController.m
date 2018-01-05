@@ -9,7 +9,7 @@
 #import "BaseTabbarController.h"
 #import "BaseTabbar.h"
 
-@interface BaseTabbarController () <BaseTabbarDelegate>
+@interface BaseTabbarController () <UITabBarDelegate, BaseTabbarDelegate>
 
 @property (nonatomic, assign) BOOL ignoreNextSelection;
 @property (nonatomic, copy) TabbarControllerShouldHookHandler shouldHookHandler;
@@ -41,6 +41,31 @@
 - (void)setSelectedViewController:(__kindof UIViewController *)selectedViewController {
     [super setSelectedViewController:selectedViewController];
     
+    if (!self.ignoreNextSelection) {
+        self.ignoreNextSelection = false;
+        return;
+    }
+    
+    if ([self.tabBar isKindOfClass:[BaseTabbar class]]) {
+        NSInteger index = [self.viewControllers indexOfObject:selectedViewController];
+        if (index == NSNotFound) {
+            return;
+        }
+        [((BaseTabbar *)self.tabBar) selectWithItemIndex:index animated:true];
+    }
+}
+
+- (void)setSelectedIndex:(NSUInteger)selectedIndex {
+    [super setSelectedIndex:selectedIndex];
+    
+    if (!self.ignoreNextSelection) {
+        self.ignoreNextSelection = false;
+        return;
+    }
+    
+    if ([self.tabBar isKindOfClass:[BaseTabbar class]]) {
+        [((BaseTabbar *)self.tabBar) selectWithItemIndex:selectedIndex animated:true];
+    }
 }
 
 #pragma mark - init
@@ -95,7 +120,11 @@
     }
     UIViewController *controller = self.viewControllers[index];
     if (controller != nil) {
-        return self.shouldHookHandler(self, controller, index);
+        if (self.shouldHookHandler) {
+            return self.shouldHookHandler(self, controller, index);
+        } else {
+            return false;
+        }
     }
     return false;
 }
@@ -110,7 +139,7 @@
         if (self.delegate) {
             return [self.delegate tabBarController:self shouldSelectViewController:controller];
         } else {
-            return false;
+            return true;
         }
     }
     return false;

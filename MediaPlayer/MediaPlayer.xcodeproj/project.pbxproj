@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3D1B4D4400391CF3DA480251 /* libPods-MediaPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B6E5F99B0C806DD6E741766 /* libPods-MediaPlayer.a */; };
-		E29A1E0C1FFB326F00B45EF1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A1E0B1FFB326F00B45EF1 /* ViewController.m */; };
-		E29A1E0F1FFB326F00B45EF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29A1E0D1FFB326F00B45EF1 /* Main.storyboard */; };
 		E29A1E111FFB326F00B45EF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E29A1E101FFB326F00B45EF1 /* Assets.xcassets */; };
 		E29A1E141FFB326F00B45EF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29A1E121FFB326F00B45EF1 /* LaunchScreen.storyboard */; };
 		E29A1E171FFB326F00B45EF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A1E161FFB326F00B45EF1 /* main.m */; };
@@ -152,6 +150,9 @@
 		E29A21071FFC818500B45EF1 /* BaseTabBarItemContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A21061FFC818500B45EF1 /* BaseTabBarItemContentView.m */; };
 		E29A210A1FFC81E300B45EF1 /* BaseTabbarBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A21091FFC81E300B45EF1 /* BaseTabbarBadgeView.m */; };
 		E29A21101FFE360200B45EF1 /* SystemConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A210E1FFE360100B45EF1 /* SystemConfig.swift */; };
+		E29A21121FFF1D8500B45EF1 /* DocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A21111FFF1D8500B45EF1 /* DocumentViewController.swift */; };
+		E29A21141FFF1D9100B45EF1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A21131FFF1D9100B45EF1 /* SettingsViewController.swift */; };
+		E29A21171FFF1F3F00B45EF1 /* TabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A21161FFF1F3F00B45EF1 /* TabbarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -159,9 +160,6 @@
 		1B6E5F99B0C806DD6E741766 /* libPods-MediaPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MediaPlayer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		353B501D344F5895C4FDC8E9 /* Pods-MediaPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MediaPlayer/Pods-MediaPlayer.debug.xcconfig"; sourceTree = "<group>"; };
 		E29A1E041FFB326F00B45EF1 /* MediaPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E29A1E0A1FFB326F00B45EF1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E29A1E0B1FFB326F00B45EF1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E29A1E0E1FFB326F00B45EF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E29A1E101FFB326F00B45EF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E29A1E131FFB326F00B45EF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E29A1E161FFB326F00B45EF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -462,6 +460,10 @@
 		E29A21091FFC81E300B45EF1 /* BaseTabbarBadgeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabbarBadgeView.m; sourceTree = "<group>"; };
 		E29A210E1FFE360100B45EF1 /* SystemConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SystemConfig.swift; path = ../../../../../../Desktop/work/private_project/HqyxStudentLiveiOS/StudentLive/StudentLive/Common/SystemConfig.swift; sourceTree = "<group>"; };
 		E29A210F1FFE360200B45EF1 /* SystemConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SystemConfig.h; path = ../../../../../../Desktop/work/private_project/HqyxStudentLiveiOS/StudentLive/StudentLive/Common/SystemConfig.h; sourceTree = "<group>"; };
+		E29A21111FFF1D8500B45EF1 /* DocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentViewController.swift; sourceTree = "<group>"; };
+		E29A21131FFF1D9100B45EF1 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		E29A21151FFF1F3F00B45EF1 /* TabbarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabbarController.h; sourceTree = "<group>"; };
+		E29A21161FFF1F3F00B45EF1 /* TabbarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabbarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -529,9 +531,6 @@
 				E29A1E221FFB343000B45EF1 /* View */,
 				E29A1E211FFB343000B45EF1 /* ViewModel */,
 				E29A1E301FFB3CCA00B45EF1 /* SupportingFiles */,
-				E29A1E0A1FFB326F00B45EF1 /* ViewController.h */,
-				E29A1E0B1FFB326F00B45EF1 /* ViewController.m */,
-				E29A1E0D1FFB326F00B45EF1 /* Main.storyboard */,
 				E29A1E101FFB326F00B45EF1 /* Assets.xcassets */,
 				E29A1E121FFB326F00B45EF1 /* LaunchScreen.storyboard */,
 				E29A1E161FFB326F00B45EF1 /* main.m */,
@@ -555,6 +554,10 @@
 				E29A1E2C1FFB3C2400B45EF1 /* BaseViewController.h */,
 				E29A1E2D1FFB3C2400B45EF1 /* BaseViewController.m */,
 				E29A20E41FFB782800B45EF1 /* HomeViewController.swift */,
+				E29A21111FFF1D8500B45EF1 /* DocumentViewController.swift */,
+				E29A21131FFF1D9100B45EF1 /* SettingsViewController.swift */,
+				E29A21151FFF1F3F00B45EF1 /* TabbarController.h */,
+				E29A21161FFF1F3F00B45EF1 /* TabbarController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1231,7 +1234,6 @@
 				E29A1E141FFB326F00B45EF1 /* LaunchScreen.storyboard in Resources */,
 				E29A20D21FFB640F00B45EF1 /* sl_mj_refresh_diy@3x.gif in Resources */,
 				E29A1E111FFB326F00B45EF1 /* Assets.xcassets in Resources */,
-				E29A1E0F1FFB326F00B45EF1 /* Main.storyboard in Resources */,
 				E29A20CF1FFB640F00B45EF1 /* MJRefresh.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1307,16 +1309,17 @@
 				E29A1FE11FFB61ED00B45EF1 /* UIButton+AFNetworking.m in Sources */,
 				E29A1FD71FFB61ED00B45EF1 /* AFSecurityPolicy.m in Sources */,
 				E29A20F81FFB8A5500B45EF1 /* BaseView.m in Sources */,
+				E29A21171FFF1F3F00B45EF1 /* TabbarController.m in Sources */,
 				E29A21071FFC818500B45EF1 /* BaseTabBarItemContentView.m in Sources */,
 				E29A1F831FFB609C00B45EF1 /* UIView+Frame.m in Sources */,
 				E29A1F7A1FFB609C00B45EF1 /* NSString+TimeStamp.m in Sources */,
 				E29A1FF21FFB63C500B45EF1 /* GTMBase64.m in Sources */,
 				E29A20CC1FFB640F00B45EF1 /* MJRefreshNormalHeader.m in Sources */,
 				E29A1FDD1FFB61ED00B45EF1 /* AFAutoPurgingImageCache.m in Sources */,
-				E29A1E0C1FFB326F00B45EF1 /* ViewController.m in Sources */,
 				E29A20DA1FFB640F00B45EF1 /* MASCompositeConstraint.m in Sources */,
 				E29A20E91FFB898000B45EF1 /* BaseTabbarController.m in Sources */,
 				E29A1F861FFB609C00B45EF1 /* NSString+Extention.m in Sources */,
+				E29A21141FFF1D9100B45EF1 /* SettingsViewController.swift in Sources */,
 				E29A1FE41FFB61ED00B45EF1 /* UIRefreshControl+AFNetworking.m in Sources */,
 				E29A20FB1FFB8A6300B45EF1 /* BaseViewModel.m in Sources */,
 				E29A20BD1FFB640F00B45EF1 /* UIImageView+HighlightedWebCache.m in Sources */,
@@ -1353,6 +1356,7 @@
 				E29A1FAC1FFB619C00B45EF1 /* NetWorkingManager.m in Sources */,
 				E29A1F801FFB609C00B45EF1 /* NSArray+Json.m in Sources */,
 				E29A20BA1FFB640F00B45EF1 /* UIButton+WebCache.m in Sources */,
+				E29A21121FFF1D8500B45EF1 /* DocumentViewController.swift in Sources */,
 				E29A1FF11FFB63C500B45EF1 /* DESUtility.m in Sources */,
 				E29A20BB1FFB640F00B45EF1 /* UIImage+GIF.m in Sources */,
 				E29A20EC1FFB89FE00B45EF1 /* BaseApi.m in Sources */,
@@ -1438,14 +1442,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E29A1E0D1FFB326F00B45EF1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E29A1E0E1FFB326F00B45EF1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E29A1E121FFB326F00B45EF1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

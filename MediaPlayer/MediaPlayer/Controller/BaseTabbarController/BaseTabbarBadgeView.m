@@ -81,7 +81,7 @@
 
 #pragma mark - lazyLoads
 - (UIImageView *)imageView {
-    if (_imageView == nil) {
+    if (!_imageView) {
         _imageView = [[UIImageView alloc] initWithFrame:CGRectZero];
         _imageView.backgroundColor = [UIColor clearColor];
     }
@@ -89,7 +89,7 @@
 }
 
 - (UILabel *)badgeLabel {
-    if (_badgeLabel == nil) {
+    if (!_badgeLabel) {
         _badgeLabel = [[UILabel alloc] initWithFrame:CGRectZero];
         _badgeLabel.backgroundColor = [UIColor clearColor];
         _badgeLabel.font = [UIFont systemFontOfSize:T7_26PX];

@@ -9,6 +9,8 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
+#import "MediaPlayer-Swift.h"
+
 #import "HQEnum.h"
 #import "Common.h"
 #import "UIView+Frame.h"

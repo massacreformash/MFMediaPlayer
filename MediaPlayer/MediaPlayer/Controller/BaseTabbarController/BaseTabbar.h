@@ -43,5 +43,6 @@ typedef NS_ENUM(NSUInteger, BaseTabbarItemPositioning) {
 - (void)highlightAction:(id)sender;
 - (void)dehilightedAction:(id)sender;
 - (void)selectAction:(id)sender;
+- (void)selectWithItemIndex:(NSInteger)idx animated:(BOOL)animated;
 
 @end
