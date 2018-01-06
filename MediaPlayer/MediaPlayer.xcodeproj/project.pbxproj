@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D1B4D4400391CF3DA480251 /* libPods-MediaPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B6E5F99B0C806DD6E741766 /* libPods-MediaPlayer.a */; };
+		C3AE6A2CE1CB4347902335A7 /* Pods_MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61BC527449A7F2FB3261C6FD /* Pods_MediaPlayer.framework */; };
+		E28B714D2001203F00D676E4 /* HomeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28B714C2001203F00D676E4 /* HomeTableView.swift */; };
 		E29A1E111FFB326F00B45EF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E29A1E101FFB326F00B45EF1 /* Assets.xcassets */; };
 		E29A1E141FFB326F00B45EF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29A1E121FFB326F00B45EF1 /* LaunchScreen.storyboard */; };
 		E29A1E171FFB326F00B45EF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A1E161FFB326F00B45EF1 /* main.m */; };
@@ -157,8 +158,9 @@
 
 /* Begin PBXFileReference section */
 		0EFBB631543CE1A613307AC6 /* Pods-MediaPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-MediaPlayer/Pods-MediaPlayer.release.xcconfig"; sourceTree = "<group>"; };
-		1B6E5F99B0C806DD6E741766 /* libPods-MediaPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MediaPlayer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		353B501D344F5895C4FDC8E9 /* Pods-MediaPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MediaPlayer/Pods-MediaPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		61BC527449A7F2FB3261C6FD /* Pods_MediaPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediaPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E28B714C2001203F00D676E4 /* HomeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableView.swift; sourceTree = "<group>"; };
 		E29A1E041FFB326F00B45EF1 /* MediaPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E29A1E101FFB326F00B45EF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E29A1E131FFB326F00B45EF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -471,7 +473,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D1B4D4400391CF3DA480251 /* libPods-MediaPlayer.a in Frameworks */,
+				C3AE6A2CE1CB4347902335A7 /* Pods_MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,7 +483,7 @@
 		2ECFA09EE002BA33716E98CA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1B6E5F99B0C806DD6E741766 /* libPods-MediaPlayer.a */,
+				61BC527449A7F2FB3261C6FD /* Pods_MediaPlayer.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -522,14 +524,14 @@
 				E29A1E231FFB343000B45EF1 /* Bussiness */,
 				E29A1E251FFB343100B45EF1 /* Common */,
 				E29A1E1E1FFB343000B45EF1 /* Controller */,
+				E29A1E221FFB343000B45EF1 /* View */,
 				E29A1E2A1FFB343100B45EF1 /* Model */,
+				E29A1E211FFB343000B45EF1 /* ViewModel */,
 				E29A1E261FFB343100B45EF1 /* Resource */,
 				E29A1E1D1FFB343000B45EF1 /* Storage */,
 				E29A1E1F1FFB343000B45EF1 /* Util */,
 				E29A1E201FFB343000B45EF1 /* Vendor */,
 				E29A1FE61FFB633600B45EF1 /* Enum */,
-				E29A1E221FFB343000B45EF1 /* View */,
-				E29A1E211FFB343000B45EF1 /* ViewModel */,
 				E29A1E301FFB3CCA00B45EF1 /* SupportingFiles */,
 				E29A1E101FFB326F00B45EF1 /* Assets.xcassets */,
 				E29A1E121FFB326F00B45EF1 /* LaunchScreen.storyboard */,
@@ -605,6 +607,7 @@
 			children = (
 				E29A20F61FFB8A5500B45EF1 /* BaseView.h */,
 				E29A20F71FFB8A5500B45EF1 /* BaseView.m */,
+				E28B714C2001203F00D676E4 /* HomeTableView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1247,9 +1250,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MediaPlayer/Pods-MediaPlayer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1428,6 +1434,7 @@
 				E29A20B61FFB640F00B45EF1 /* SDWebImageDownloader.m in Sources */,
 				E29A1F851FFB609C00B45EF1 /* UIView+Frmae.swift in Sources */,
 				E29A20AC1FFB640F00B45EF1 /* YYSpriteSheetImage.m in Sources */,
+				E28B714D2001203F00D676E4 /* HomeTableView.swift in Sources */,
 				E29A20F51FFB8A4600B45EF1 /* BaseStorage.m in Sources */,
 				E29A20C61FFB640F00B45EF1 /* MJRefreshAutoNormalFooter.m in Sources */,
 				E29A1FDF1FFB61ED00B45EF1 /* AFNetworkActivityIndicatorManager.m in Sources */,
@@ -1505,6 +1512,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -1554,6 +1562,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
