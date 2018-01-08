@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C3AE6A2CE1CB4347902335A7 /* Pods_MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61BC527449A7F2FB3261C6FD /* Pods_MediaPlayer.framework */; };
 		E28B714D2001203F00D676E4 /* HomeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28B714C2001203F00D676E4 /* HomeTableView.swift */; };
+		E28B71512003479B00D676E4 /* UIViewController+BaseNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E28B71502003479B00D676E4 /* UIViewController+BaseNavigationBar.m */; };
 		E29A1E111FFB326F00B45EF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E29A1E101FFB326F00B45EF1 /* Assets.xcassets */; };
 		E29A1E141FFB326F00B45EF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29A1E121FFB326F00B45EF1 /* LaunchScreen.storyboard */; };
 		E29A1E171FFB326F00B45EF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A1E161FFB326F00B45EF1 /* main.m */; };
@@ -161,6 +162,8 @@
 		353B501D344F5895C4FDC8E9 /* Pods-MediaPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MediaPlayer/Pods-MediaPlayer.debug.xcconfig"; sourceTree = "<group>"; };
 		61BC527449A7F2FB3261C6FD /* Pods_MediaPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediaPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28B714C2001203F00D676E4 /* HomeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableView.swift; sourceTree = "<group>"; };
+		E28B714F2003479B00D676E4 /* UIViewController+BaseNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BaseNavigationBar.h"; sourceTree = "<group>"; };
+		E28B71502003479B00D676E4 /* UIViewController+BaseNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BaseNavigationBar.m"; sourceTree = "<group>"; };
 		E29A1E041FFB326F00B45EF1 /* MediaPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E29A1E101FFB326F00B45EF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E29A1E131FFB326F00B45EF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -497,6 +500,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E28B714E2003477000D676E4 /* BaseNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				E28B714F2003479B00D676E4 /* UIViewController+BaseNavigationBar.h */,
+				E28B71502003479B00D676E4 /* UIViewController+BaseNavigationBar.m */,
+			);
+			path = BaseNavigationController;
+			sourceTree = "<group>";
+		};
 		E29A1DFB1FFB326F00B45EF1 = {
 			isa = PBXGroup;
 			children = (
@@ -552,6 +564,7 @@
 		E29A1E1E1FFB343000B45EF1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E28B714E2003477000D676E4 /* BaseNavigationController */,
 				E29A20E61FFB88F100B45EF1 /* BaseTabbarController */,
 				E29A1E2C1FFB3C2400B45EF1 /* BaseViewController.h */,
 				E29A1E2D1FFB3C2400B45EF1 /* BaseViewController.m */,
@@ -1333,6 +1346,7 @@
 				E29A1F881FFB609C00B45EF1 /* UIButton+BackgroundColor.swift in Sources */,
 				E29A20D71FFB640F00B45EF1 /* MBProgressHUD.m in Sources */,
 				E29A1FAE1FFB619C00B45EF1 /* NetworkStatusMonitor.m in Sources */,
+				E28B71512003479B00D676E4 /* UIViewController+BaseNavigationBar.m in Sources */,
 				E29A1FA01FFB615D00B45EF1 /* HQLoadingAnimation.m in Sources */,
 				E29A20D01FFB640F00B45EF1 /* MJRefreshConst.m in Sources */,
 				E29A20D31FFB640F00B45EF1 /* UIScrollView+MJExtension.m in Sources */,
